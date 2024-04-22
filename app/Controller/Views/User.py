@@ -28,7 +28,7 @@ def login():
             q = {
                 "username": {
                     "$regex": username,
-                    "$options": "$i"
+                    "$options": "i"
                 }
             }
             user_info = u.get_user(q)

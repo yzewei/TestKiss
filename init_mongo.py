@@ -22,6 +22,9 @@ db.insert_many(
         {"_id": "run_index", "index": 1},
         {"_id": "product_module_index", "index": 1},
         {"_id": "plans", "index": 1},
-        {"_id": "run_case_index", "index": 1}
+        {"_id": "run_case_index", "index": 1},
+        {"_id": "shells", "index": 1},
+        {"_id": "shell_priority_index", "index": 1},
+        {"_id": "run_shell_index", "index": 1}
     ], ordered=False
 )

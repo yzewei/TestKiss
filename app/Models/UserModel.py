@@ -10,7 +10,7 @@ def load_user(username):
     q = {
         "username": {
             "$regex": username,
-            "$options": "$i"
+            "$options": "i"
         }
     }
     u = db['users'].find_one(q)
@@ -53,7 +53,7 @@ class User:
         q = {
             "username": {
                 "$regex": self.username,
-                "$options": "$i"
+                "$options": "i"
             }
         }
         return self.table.find_one(q)
@@ -67,7 +67,7 @@ class UserInfo(CommonModel):
         query = {
             "username": {
                 "$regex": username,
-                "$options": "$i"
+                "$options": "i"
             }
         }
         doc = self.table.find_one(query, {"username": 1})

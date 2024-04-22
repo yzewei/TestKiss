@@ -17,7 +17,12 @@
                     <li><a href="{{ url_for("case.dashboard") }}">编写用例</a></li>
                 </ul>
             </li>
-            <li><a><i class="fa fa-desktop"></i> 计划*执行*报告 <span class="fa fa-chevron-down"></span></a>
+            <li><a><i class="fa fa-desktop"></i> 添加测试脚本 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{{ url_for("shell.lists") }}">测试脚本列表</a></li>
+                </ul>
+            </li>
+	    <li><a><i class="fa fa-desktop"></i> 计划*执行*报告 <span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url_for("plan.lists") }}">计划列表</a></li>
                 </ul>

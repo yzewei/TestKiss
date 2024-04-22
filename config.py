@@ -8,7 +8,7 @@ class Config(object):
 
 
 class DevConfig(Config):
-    SERVER_URL = 'http://0.0.0.0:8080'
+    SERVER_URL = 'http://127.0.0.1:8080'
     MONGO_URI = "127.0.0.1"
     MONGO_PORT = 27017
     MONGO_DB = "test_case"
@@ -16,7 +16,7 @@ class DevConfig(Config):
 
 
 class ProductConfig(Config):
-    SERVER_URL = 'http://0.0.0.0:8080'
+    SERVER_URL = 'http://127.0.0.1:8080'
     MONGO_URI = "127.0.0.1"
     MONGO_PORT = 27017
     MONGO_DB = "test_case"

@@ -9,6 +9,7 @@ from app.Controller.Views.Rep import rep
 from app.Controller.Views.Run import run
 from app.Controller.Views.Report import report
 from app.Controller.Views.Product import product
+from app.Controller.Views.Bug import bug
 
 app.register_blueprint(user, url_prefix='/user')
 app.register_blueprint(home, url_prefix='/')
@@ -19,3 +20,4 @@ app.register_blueprint(rep, url_prefix='/rep')
 app.register_blueprint(run, url_prefix='/run')
 app.register_blueprint(report, url_prefix='/report')
 app.register_blueprint(product, url_prefix='/product')
+app.register_blueprint(bug, url_prefix='/bug')
